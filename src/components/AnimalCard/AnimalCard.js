@@ -73,7 +73,7 @@ const AnimalCard = ({ loading, pet, petId, image, name, breeds, age, gender, dis
 
 
     return (
-        <div className='relative basis-4/5 md:basis-1/4 lg:basis-1/5 min-w-[275px] mx-4'>
+        <div className='relative basis-4/5 md:basis-1/4 lg:basis-1/5 min-w-[275px]'>
             <Link to={`/${pet}/${petId}`} className={`flex flex-col  rounded-lg overflow-hidden mb-20 bg-white drop-shadow-md ${loading && 'animate-pulse'}`}>
                 <div className='relative overflow-hidden h-80 bg-gray-400'>
                     <img src={image} alt={name} className='absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 object-cover w-full h-full' />
