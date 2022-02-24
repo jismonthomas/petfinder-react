@@ -19,9 +19,9 @@ const Home = () => {
         <main className="bg-orange-50">
             <section className='pt-16 px-10 md:px-16 lg:px-24'>
                 <span className="border-b-2 border-orange-600 text-gray-700 font-semibold">Find Your Pet</span>
-                <h1 className="text-xl my-5 lg:text-6xl font-black text-orange-600">Pets Available for Adoption Near You</h1>
+                <h1 className="text-2xl my-5 lg:text-6xl font-black text-orange-600">Pets Available for Adoption Near You</h1>
 
-                <div className="mt-5 pt-24">
+                <div className="mt-1 pt-3 md:mt-5 md:pt-24">
                     <div className="flex flex-row flex-wrap justify-between">
                         {availablePets().map((imgurl) => {
                             return <div key={imgurl} className="basis-1/5 mt-2.5 mx-2.5 mb-16 text-center">

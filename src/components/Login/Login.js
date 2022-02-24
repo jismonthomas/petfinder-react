@@ -57,18 +57,18 @@ const Login = () => {
 
     return <Fragment>
         {ReactDOM.createPortal(
-            <div className={`absolute top-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-50 z-20 rounded-lg overflow-hidden shadow-lg min-w-[30%]`}>
+            <div className={`absolute top-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-50 z-20 rounded-lg overflow-hidden shadow-lg min-w-[90%] md:min-w-[60%] lg:min-w-[30%]`}>
                 <div className="flex flex-col">
                     <div className="bg-gray-200">
                         <h1 className="text-[2rem] font-bold text-slate-700 py-3 px-3 text-center">Account</h1>
                     </div>
                     {!userLoggedIn &&
                         <div className="p-5">
-                            <div className="flex justify-between mb-12 cursor-pointer" onClick={changeAuthMode}>
-                                <div className={`text-center basis-1/2 py-3 ${register ? 'bg-gray-200 text-gray-600 shadow-inner' : ' bg-gray-600 text-white shadow-md'} transition-all`}>
+                            <div className="flex flex-col md:flex-row justify-between mb-12 cursor-pointer" onClick={changeAuthMode}>
+                                <div className={`text-center basis-1/2 px-2 py-3 ${register ? 'bg-gray-200 text-gray-600 shadow-inner' : ' bg-gray-600 text-white shadow-md'} transition-all`}>
                                     I already have an account
                                 </div>
-                                <div className={`text-center basis-1/2 py-3  ${register ? 'bg-gray-600 text-white shadow-md' : 'bg-gray-200 text-gray-600 shadow-inner'} transition-all`}>
+                                <div className={`text-center basis-1/2 px-2 py-3  ${register ? 'bg-gray-600 text-white shadow-md' : 'bg-gray-200 text-gray-600 shadow-inner'} transition-all`}>
                                     Create New Account
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const Login = () => {
                 </div>
                 {userLoggedIn &&
                     <Fragment>
-                        <p className="text-center pt-5">You are logged in now, are you trying to logout?</p>
+                        <p className="text-center px-3 pt-5">You are logged in now, are you trying to logout?</p>
                         <div className="p-5 flex">
                             <button
                                 type="button"

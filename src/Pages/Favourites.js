@@ -17,7 +17,7 @@ const Favourites = () => {
         <div className='bg-orange-500'>
             <Navigation />
         </div>
-        <div className='mt-16 px-10 md:px-16 lg:px-24'>
+        <div className='mt-16 px-4 md:px-16 lg:px-24'>
             {userLoggedIn &&
                 userFavourites?.length < 1 && <p className="text-center text-slate-700">Your haven't added any pets to your list.</p>}
             {!userLoggedIn &&
@@ -29,7 +29,7 @@ const Favourites = () => {
                 </div>
             }
             {userLoggedIn &&
-                <div className='flex flex-row flex-wrap justify-between gap-1'>
+                <div className='flex flex-row flex-wrap justify-center md:justify-between gap-1'>
                     {[...userFavourites]?.reverse()?.map(animal => {
                         return (
                             <AnimalCard

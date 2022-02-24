@@ -90,7 +90,7 @@ const SearchForm = () => {
                             name='location'
                             required
                         />
-                        <div className="relative w-full md:min-w-[20%]">
+                        <div className="relative w-full md:min-w-[20%] py-4 md:py-0">
                             {result && pageInFocus &&
                                 <p onClick={togglePetList} className="capitalize pr-3 font-medium flex items-center cursor-pointer">
                                     {PET_IMAGES[selectedPet.image] && <img src={`${PET_IMAGES[selectedPet.image]}`} className='h-[48px] pr-3' />}

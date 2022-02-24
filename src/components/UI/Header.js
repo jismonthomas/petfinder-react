@@ -7,8 +7,8 @@ function Header() {
         <header className='bg-orange-500 relative'>
             <Navigation />
             <div className="px-10 md:px-16 lg:px-24 flex flex-col md:flex-row items-center text-slate-50">
-                <div className="w-full lg:basis-1/2">
-                    <h1 className="text-7xl lg:text-7xl font-black">
+                <div className="w-full mt-4 lg:mt-0 lg:basis-1/2">
+                    <h1 className="text-4xl lg:text-7xl font-black">
                         Find the right pet for you.
                     </h1>
                     <p className="text-orange-100 mt-4 text-lg">An online platform to search for animals who need homes. A directory of nearly 11,000 animal shelters and adoption organizations across the U.S., Canada and Mexico</p>

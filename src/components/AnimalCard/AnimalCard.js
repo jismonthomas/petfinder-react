@@ -73,7 +73,7 @@ const AnimalCard = ({ loading, pet, petId, image, name, breeds, age, gender, dis
 
 
     return (
-        <div className='relative basis-4/5 md:basis-1/4 lg:basis-1/5'>
+        <div className='relative basis-4/5 md:basis-1/4 lg:basis-1/5 min-w-[275px] mx-4'>
             <Link to={`/${pet}/${petId}`} className={`flex flex-col  rounded-lg overflow-hidden mb-20 bg-white drop-shadow-md ${loading && 'animate-pulse'}`}>
                 <div className='relative overflow-hidden h-80 bg-gray-400'>
                     <img src={image} alt={name} className='absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 object-cover w-full h-full' />
@@ -81,11 +81,11 @@ const AnimalCard = ({ loading, pet, petId, image, name, breeds, age, gender, dis
                 <div className='p-4'>
                     <h2 className='font-semibold text-stone-900 text-lg	'>{name}</h2>
                     <span className='text-slate-500 text-sm block mb-3'>{breeds}</span>
-                    <div className='flex justify-between'>
-                        <span className='bg-orange-200 text-orange-900 text-sm font-medium px-3 py-1 rounded-xl mt-2 inline-block'>
+                    <div className='flex flex-col xl:flex-row justify-between'>
+                        <span className='bg-orange-200 text-orange-900 text-sm font-medium px-3 py-1 rounded-xl mt-2 inline-block text-center xl:text-left'>
                             {age} | {gender}
                         </span>
-                        <span className='border-slate-200 text-gray-700 text-sm font-normal px-2 py-1 rounded-sm mt-2 inline-block'>
+                        <span className='border-slate-200 text-gray-700 text-sm font-normal px-2 py-1 rounded-sm mt-2 inline-block text-center xl:text-left'>
                             {distance} km Away
                         </span>
                     </div>

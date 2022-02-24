@@ -43,7 +43,7 @@ function SearchResults() {
                 </>
             }
             {result &&
-                <div className='flex flex-row flex-wrap justify-between gap-1'>
+                <div className='flex flex-row flex-wrap justify-center md:justify-between gap-1'>
                     {result.animals.map(animal => {
                         const breeds = `${animal.breeds.primary ? animal.breeds.primary : ''} ${animal.breeds.secondary ? '& ' + animal.breeds.secondary + ' mix' : ''}`;
 

@@ -14,20 +14,20 @@ const Navigation = () => {
 
     return (
         <Fragment>
-            <nav className='px-10 md:px-16 lg:px-24 py-5 flex items-center justify-between text-slate-50'>
+            <nav className='px-10 md:px-16 lg:px-24 py-5 flex flex-col sm:flex-row items-center justify-between text-slate-50'>
                 <h1 className='text-2xl text-slate-100 font-extrabold'>
                     <Link to='/'>
                         Petfinder
                     </Link>
                 </h1>
-                <ul className='flex font-medium justify-between min-w-[10%]'>
+                <ul className='flex font-medium justify-start sm:justify-between min-w-full sm:min-w-[10%]'>
                     <li className='pr-4'>
                         <NavLink to='/'>Home</NavLink>
                     </li>
                     <li className='pr-4'>
                         <NavLink to='/favourites' className={({ isActive }) => (isActive ? "text-amber-200" : '')}>Favourites</NavLink>
                     </li>
-                    <li>
+                    <li className=' ml-auto'>
                         <button className='font-medium' onClick={toggleLogin}>
                             {userLoggedIn ? 'Logout' : 'Login'}
                         </button>
