@@ -57,7 +57,7 @@ const Login = () => {
 
     return <Fragment>
         {ReactDOM.createPortal(
-            <div className={`absolute top-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-50 z-20 rounded-lg overflow-hidden shadow-lg min-w-[90%] md:min-w-[60%] lg:min-w-[30%]`}>
+            <div className={`fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-50 z-20 rounded-lg overflow-hidden shadow-lg min-w-[90%] md:min-w-[60%] lg:min-w-[30%]`}>
                 <div className="flex flex-col">
                     <div className="bg-gray-200">
                         <h1 className="text-[2rem] font-bold text-slate-700 py-3 px-3 text-center">Account</h1>
