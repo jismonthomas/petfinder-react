@@ -133,7 +133,7 @@ const SearchForm = () => {
                     </form>}
             </div>
             {formError &&
-                <p className="py-2 px-4 rounded-sm text-gray-50 text-sm bg-amber-600 shadow-lg left-1/2 -translate-x-2/4 text-center d-block mt-5 absolute capitalize">
+                <p className="py-2 px-4 rounded-sm text-gray-50 text-sm bg-amber-600 shadow-lg left-1/2 -translate-x-2/4 text-center d-block mt-5 absolute capitalize w-full md:w-auto">
                     {formError}
                 </p>}
         </div>

@@ -16,7 +16,7 @@ function Notification({ status, title, message }) {
     }, []);
 
     useEffect(() => {
-        const notificationTimer = setTimeout(closeNotification, 100000);
+        const notificationTimer = setTimeout(closeNotification, 10000);
 
         return () => {
             if (notificationTimer) {
@@ -39,7 +39,7 @@ function Notification({ status, title, message }) {
 
     return <Fragment>
         {ReactDOM.createPortal(
-            <div className={`absolute left-1/2 -translate-x-1/2 top-2 rounded-lg overflow-hidden shadow-xl bg-white z-30 min-w-[50%] `}>
+            <div className={`absolute left-1/2 -translate-x-1/2 top-2 rounded-lg overflow-hidden shadow-xl bg-white z-30 min-w-[90%] sm:min-w-[50%]`}>
                 <div className="flex">
                     {title &&
                         <div className={`flex items-center py-1 px-5 grow text-white font-semibold ${notificationTheme}`}>

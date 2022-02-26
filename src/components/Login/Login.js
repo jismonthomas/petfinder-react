@@ -131,10 +131,10 @@ const Login = () => {
                         <div className="p-5 flex">
                             <button
                                 type="button"
-                                className="capitalize text-center w-full bg-gray-200 text-orange-500 py-3 font-medium rounded mx-1 mb-5"
+                                className="capitalize text-center w-full bg-gray-200 text-orange-500 py-3 font-medium rounded mx-1 mb-5 hover:bg-gray-300"
                                 onClick={closeLoginHandler}>No</button>
                             <button
-                                className="capitalize text-center w-full bg-orange-500 text-white py-3 font-medium rounded shadow-md mx-1 mb-5"
+                                className="capitalize text-center w-full bg-orange-500 text-white py-3 font-medium rounded shadow-md mx-1 mb-5 hover:bg-orange-600"
                                 type="button"
                                 onClick={logoutHandler}>Yes</button>
                         </div>

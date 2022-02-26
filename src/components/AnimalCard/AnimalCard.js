@@ -73,7 +73,7 @@ const AnimalCard = ({ loading, pet, petId, image, name, breeds, age, gender, dis
 
 
     return (
-        <div className='relative basis-4/5 md:basis-1/4 lg:basis-1/5 min-w-[275px] mx-4'>
+        <div className='relative w-full max-w-[90%] sm:max-w-[275px] xl:max-w-[325px] sm:mx-2 2xl:mx-5'>
             <Link to={`/${pet}/${petId}`} className={`flex flex-col  rounded-lg overflow-hidden mb-20 bg-white drop-shadow-md ${loading && 'animate-pulse'}`}>
                 <div className='relative overflow-hidden h-80 bg-gray-400'>
                     <img src={image} alt={name} className='absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 object-cover w-full h-full' />
@@ -98,10 +98,10 @@ const AnimalCard = ({ loading, pet, petId, image, name, breeds, age, gender, dis
                 disabled={addingFav === true ? true : false}
             >
                 {!addingFav &&
-                    <HeartIcon className={`stroke-white stroke-2 h-6 ${isthisFavPet() ? 'fill-white' : 'fill-transparent'}`} />
+                    <HeartIcon className={`stroke-white stroke-2 h-6 ${isthisFavPet() ? 'fill-white hover:fill-white/50' : 'fill-transparent hover:fill-white/50'} `} />
                 }
                 {addingFav &&
-                    <RefreshIcon className={`fill-white h-6 animate-spin`} />
+                    <RefreshIcon className={`fill-white/90 h-6 animate-spin`} />
                 }
             </button>
         </div>
