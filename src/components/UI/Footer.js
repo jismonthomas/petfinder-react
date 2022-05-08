@@ -15,7 +15,7 @@ const Footer = () => {
 
                         <a href="https://github.com/jismonthomas/petfinder-react" target='_blank' rel="noreferrer" className="mb-8 lg:mb-0 flex flex-col items-center text-center pt-1 hover:text-white">
                             <img src={githubLogo} alt="GitHub Logo" className='max-w-[64px] mb-2' />
-                            <span>GitHub Reopsitory</span>
+                            <span>GitHub Repository</span>
                         </a>
 
                         <a href="https://jismonthomas.com/" target='_blank' rel="noreferrer" className="flex flex-col items-center text-center pt-1 hover:text-white">
